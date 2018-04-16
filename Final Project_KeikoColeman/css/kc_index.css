@@ -1,0 +1,297 @@
+/* reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 15px;
+	color: #7e7358;
+	font-family: Arial, Helvetica, sans-serif; 　
+}
+
+div{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #3d4446;
+	/*color: #B3BCC1;*/
+	/*text-align:center;*/
+}
+
+nav {
+    display: flex;
+	height: 100%;
+	/*display:inline-block;*/
+	/*vertical-align: middle;*/
+	margin: 20px 0 0 30px;
+}
+
+nav div {
+    flex-grow: 1;
+}
+
+nav ul a {
+    /* remove underline from links */
+    text-decoration: none;
+	font-size: 23px;
+	font-family: 'Sniglet', cursive;
+	color: #3d4446;
+	margin: 0 0 0 40px;
+}
+
+nav ul {
+	/*flex-grow: 1;*/
+	display: flex;
+	justify-content: flex-end;
+	/* 中黒取る */
+	list-style-type: none;
+}
+
+nav ul li {
+    /*flex-grow: 1;*/
+    width: 140px;
+	height: 57px;
+}
+
+.logo img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#main {
+    width: 1140px;
+	/*width: auto;*/
+    margin: auto;
+    /*background: pink;*/ 
+}
+
+.pics {
+    display: flex;
+    align-items: center;
+	width: 100%;
+	/*max-width: 1140px; 
+	min-width: 140px; */
+}
+
+#left { 
+	clear: left;
+	width: 570px;
+	height: auto;
+	position: relative;
+}
+
+#right { 
+    width: 570px;
+	height: auto;
+    max-width: 100%;
+    position: relative;
+}
+
+/*アニメーション用のスタイル*/
+@keyframes slide1 {
+	0% {opacity: 0;}
+	10% {opacity: 1;}
+	30% {opacity: 1;}
+	40% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes slide2 {
+	0% {opacity: 0;}
+	30% {opacity: 0;}
+	40% {opacity: 1;}
+	60% {opacity: 1;}
+	70% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes slide3 {
+	0% {opacity: 0;}
+	60% {opacity: 0;}
+	70% {opacity: 1;}
+	90% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@keyframes slide4 {
+	0% {opacity: 0;}
+	10% {opacity: 1;}
+	30% {opacity: 1;}
+	40% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes slide5 {
+	0% {opacity: 0;}
+	30% {opacity: 0;}
+	40% {opacity: 1;}
+	60% {opacity: 1;}
+	70% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes slide6 {
+	0% {opacity: 0;}
+	60% {opacity: 0;}
+	70% {opacity: 1;}
+	90% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+/*アニメーション*/
+/*３枚画像の共通設定*/
+#slide1,#slide2,#slide3,#slide4,#slide5,#slide6 {
+	-webkit-animation-duration: 10s;	/*実行する時間。「s」は秒の事。*/
+	animation-duration: 10s;			/*同上*/
+	-webkit-animation-iteration-count:infinite;	/*実行する回数。「infinite」は無限に繰り返す意味。*/
+	animation-iteration-count:infinite;			/*同上*/
+}
+
+#slide1 {
+	-webkit-animation-name: slide1;		/*上で設定しているキーフレーム（keyframes）の名前*/
+	animation-name: slide1;				/*同上*/
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+#slide2 {
+	-webkit-animation-name: slide2;		/*上で設定しているキーフレーム（keyframes）の名前*/
+	animation-name: slide2;				/*同上*/
+	position: absolute;
+	left:0px;
+	top:0px;
+	width: 100%;
+	height: auto;
+}
+
+#slide3 {
+	-webkit-animation-name: slide3;		/*上で設定しているキーフレーム（keyframes）の名前*/
+	animation-name: slide3;				/*同上*/
+	position: absolute;
+	left:0px;
+	top:0px;
+	width: 100%;
+	height: auto;
+}
+
+#slide4 {
+	-webkit-animation-name: slide4;		/*上で設定しているキーフレーム（keyframes）の名前*/
+	animation-name: slide1;				/*同上*/
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+#slide5 {
+	-webkit-animation-name: slide5;		/*上で設定しているキーフレーム（keyframes）の名前*/
+	animation-name: slide2;				/*同上*/
+	position: absolute;
+	left:0px;
+	top:0px;
+	width: 100%;
+	height: auto;
+}
+
+#slide6 {
+	-webkit-animation-name: slide6;		/*上で設定しているキーフレーム（keyframes）の名前*/
+	animation-name: slide3;				/*同上*/
+	position: absolute;
+	left:0px;
+	top:0px;
+	width: 100%;
+	height: auto;
+}
+
+.enter{
+	/*width: 1140px;*/
+	display: flex; /* create flex container */
+    flex-direction: column; /* set flex items in the column */
+    align-items: center; /* center item horizontally */
+	position:relative;
+}
+
+.enter a {
+	text-decoration: none;
+	color: #3D4446;
+}
+
+/*footer{
+    height: 170px;
+	width: 100%;
+	background: #cdcdcd;
+    padding-top: 25px;
+}
+
+.footerlinks{
+	color: #fff;
+	margin: 0 43px 0 43px;
+}*/
+
+.footer--primary {
+	position:relative;
+	z-index:1;
+	background:#bcbbbb;	
+	/*border-top:1px solid #d2cab6;*/
+	padding:22px 43px 20px 43px;
+	}
+	
+.footer-inner{
+	position:relative;
+	max-width:1140px;
+	margin:0 auto;
+	position:relative;
+	}
+	
+.footer__column{
+	width:200px;
+	max-width:100%;
+	display:inline-block;
+	vertical-align:top;
+	margin-top:0.3em
+	/*margin-bottom:25px;*/
+	/*width:25px;*/
+	}
+	
+.footer__column-heading{
+	color:#3d4446;
+	font-family: 'Sniglet', cursive;
+	/*font-size:1.2em;*/
+	font-size:18px;
+	margin-bottom:0.2em
+	}
+.footer-inner .footer__column .footer__column-heading {
+}
+	
+.footer__column-links{
+	float:left;
+	padding-top:6px;
+	list-style-type: none;
+	}
+	
+.footer__column-links li a{
+	display:block;
+	font-size:13px;
+	text-decoration: none;
+	color:#fff;
+	padding:0.3em;
+	}
+	
+.footer__social-icons{
+	float:right;
+	display:inline-block;
+	padding:0.22em;
+	text-align:center;
+	/*margin:0 6px;
+	border-radius:50%*/
+	}
+	
+.footer__copyright{
+	position:absolute;
+	right:0;
+	bottom:0;
+	font-size:11px;
+	margin-bottom: 5px;
+	}
+	
+	

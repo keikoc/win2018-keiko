@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  border-sizing: border-box;
+}
+
+ /*bulletesが消える*/
+  /*ulはペアレント*/
+ul{
+   list-style-type: none; 
+     /*これでナビゲーションバーが横になる*/
+   display: flex;
+    /*これでナビゲーションバーが左に*/
+   justify-content: flex-end;
+    /*これでナビゲーションバーが全体に帯になる*/
+   background-color: #cecece;
+}
+
+
+nav ul li a{
+    /*アンダーラインが消える*/
+  text-decoration: none;  
+  /*四角で囲む*/
+  display: block;
+  width: 100px;
+   /*行間開ける*/
+  padding: 15px;
+  background-color: #cecece;
+  color: #fff;
+  font-family: verdana, sans-serif,
+}
+
+li a:hover {
+    background-color: #465945;
+      /*かっこわるいからいらないけど、ボーダーで囲む*/
+    border: ;
+    color: #000;
+}
+
+.contact { 
+    order: 1;
+}
+
+li a img{
+    
+}
