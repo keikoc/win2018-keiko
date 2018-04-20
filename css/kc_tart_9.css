@@ -231,22 +231,34 @@ nav ul li {
 	margin-left:30px;
 }
 
-/*.list_product li a:hover article h1{
-	text-decoration:underline;
+.btn{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #ef9da3;
+    width: 110px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 7px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(#fed6e3 0%, #fff9fb 100%);
+    background-image: linear-gradient(#fed6e3 0%, #ffaaaa 100%);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
 }
-*/
 
-/*.enter{
-	display: flex; (create flex container)
-    flex-direction: column; (set flex items in the column)
-    align-items: center; (center item horizontally)
-	position:relative;
-}*/
+.btn:active{/*押したとき*/
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);/*沈むように*/
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    background-image: -webkit-linear-gradient(#fed6e3 0%, #ffbcbc 100%);
+    background-image: linear-gradient(#fed6e3 0%, #ffbcbc 100%);/*グラデーションを明るく*/
+}
 
-/*.enter a {
-	text-decoration: none;
-	color: #3D4446;
-}*/
 
 .footer--primary {
 	position:relative;
